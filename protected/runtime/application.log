@@ -39,3 +39,47 @@ Stack trace:
 REQUEST_URI=/szakd_backend/index.php/stations/index
 HTTP_REFERER=http://localhost/szakd_backend/
 ---
+2014/02/27 20:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "stationApis".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('stationApis')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php/stationApis
+---
+2014/02/27 20:26:41 [error] [exception.CException] exception 'CException' with message 'StationApiController cannot find the requested view "".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\StationApiController.php(6): CController->renderPartial(NULL)
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StationApiController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('stationApi')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/szakd_backend/index.php/stationApi
+---
+2014/02/27 21:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "testPut".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('testPut')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('testPut')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('stationApi/test...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/szakd_backend/index.php/stationApi/testPut
+---
+2014/02/27 21:39:03 [error] [php] file_put_contents(): Only 0 of 4 bytes written, possibly out of free disk space (C:\wamp\www\szakd_backend\protected\controllers\StationApiController.php:30)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(286): StationApiController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(265): StationApiController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(282): StationApiController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php/stationApi/testPut
+in C:\wamp\www\szakd_backend\protected\controllers\StationApiController.php (30)
+in C:\wamp\www\szakd_backend\index.php (13)
