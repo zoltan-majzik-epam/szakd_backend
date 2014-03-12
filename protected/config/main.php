@@ -14,6 +14,7 @@ $config = array(
 	'import' => array(
 		'application.models.*',
 		'application.components.*',
+		'application.controllers.*',
 		'ext.giix-components.*', // giix components
 	),
 	// application components
