@@ -76,5 +76,18 @@ class StationApiController extends Controller {
 		else
 			return false;
 	}
+	
+	public function actionRequestNewStation() {
+		$sql = "SELECT MAX(id) + 1 FROM {{station}}";
+		$id = Yii::app()->db->createCommand($sql)->queryScalar();
+		$token = md5($id . time());
+		
+		$station = new Station();
+		$station->id = $id;
+		$station->token = $token;
+		$station->name = "$id - Station";
+		$station->save();
+		$this->renderPartial("plain", array("answer" => $id . "," . $token));
+	}
 
 }
