@@ -317,3 +317,144 @@ REQUEST_URI=/szakd_backend/index.php?r=position/index
 in C:\wamp\www\szakd_backend\protected\views\position\index.php (19)
 in C:\wamp\www\szakd_backend\protected\controllers\PositionController.php (61)
 in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/07 22:55:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Nem hozható létre kapcsolat, mert a célszámítógép már visszautasította a kapcsolatot.
+' in C:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\wamp\www\yii\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\wamp\www\yii\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(442): CModule->getComponent('db')
+#4 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(451): MigrateCommand->getDbConnection()
+#5 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(482): MigrateCommand->getMigrationHistory(-1)
+#6 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 C:\wamp\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 C:\wamp\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#12 C:\wamp\www\yii\framework\yiic.php(33): CApplication->run()
+#13 C:\wamp\www\szakd_backend\protected\yiic.php(7): require_once('C:\wamp\www\yii...')
+#14 C:\wamp\www\szakd_backend\protected\yiic(4): require_once('C:\wamp\www\sza...')
+#15 {main}
+---
+2014/04/07 22:56:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '
+	`lastLogin` int
+)' at line 7. The SQL statement executed was: CREATE TABLE `tbl_user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` VARCHAR(64),
+	`email` VARCHAR(64),
+	`password` VARCHAR(128),
+	`username` VARCHAR(32),
+	`role` VARCHAR(16) DEFAULT ,
+	`lastLogin` int
+).
+2014/04/07 22:56:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '
+	`lastLogin` int
+)' at line 7. The SQL statement executed was: CREATE TABLE `tbl_user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` VARCHAR(64),
+	`email` VARCHAR(64),
+	`password` VARCHAR(128),
+	`username` VARCHAR(32),
+	`role` VARCHAR(16) DEFAULT ,
+	`lastLogin` int
+)' in C:\wamp\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\wamp\www\yii\framework\db\CDbMigration.php(233): CDbCommand->createTable('{{user}}', Array, NULL)
+#2 C:\wamp\www\szakd_backend\protected\migrations\m140407_224229_add_users_table.php(15): CDbMigration->createTable('{{user}}', Array)
+#3 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(385): m140407_224229_add_users_table->up()
+#4 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140407_224229_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\wamp\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\wamp\www\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\szakd_backend\protected\yiic.php(7): require_once('C:\wamp\www\yii...')
+#12 C:\wamp\www\szakd_backend\protected\yiic(4): require_once('C:\wamp\www\sza...')
+#13 {main}
+---
+2014/04/07 22:57:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user,
+	`lastLogin` int
+)' at line 7. The SQL statement executed was: CREATE TABLE `tbl_user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` VARCHAR(64),
+	`email` VARCHAR(64),
+	`password` VARCHAR(128),
+	`username` VARCHAR(32),
+	`role` VARCHAR(16) DEFAULT user,
+	`lastLogin` int
+).
+2014/04/07 22:57:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'user,
+	`lastLogin` int
+)' at line 7. The SQL statement executed was: CREATE TABLE `tbl_user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` VARCHAR(64),
+	`email` VARCHAR(64),
+	`password` VARCHAR(128),
+	`username` VARCHAR(32),
+	`role` VARCHAR(16) DEFAULT user,
+	`lastLogin` int
+)' in C:\wamp\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\wamp\www\yii\framework\db\CDbMigration.php(233): CDbCommand->createTable('{{user}}', Array, NULL)
+#2 C:\wamp\www\szakd_backend\protected\migrations\m140407_224229_add_users_table.php(15): CDbMigration->createTable('{{user}}', Array)
+#3 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(385): m140407_224229_add_users_table->up()
+#4 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140407_224229_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\wamp\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\wamp\www\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\szakd_backend\protected\yiic.php(7): require_once('C:\wamp\www\yii...')
+#12 C:\wamp\www\szakd_backend\protected\yiic(4): require_once('C:\wamp\www\sza...')
+#13 {main}
+---
+2014/04/07 22:58:09 [error] [php] Undefined variable: query (C:\wamp\www\szakd_backend\protected\migrations\m140407_224229_add_users_table.php:27)
+Stack trace:
+#0 unknown(0): MigrateCommand->actionUp()
+#1 C:\wamp\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#2 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(71): MigrateCommand->run()
+#3 C:\wamp\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#5 C:\wamp\www\yii\framework\yiic.php(33): CConsoleApplication->run()
+#6 C:\wamp\www\szakd_backend\protected\yiic.php(7): require_once()
+#7 C:\wamp\www\szakd_backend\protected\yiic(4): require_once()
+
+2014/04/07 22:58:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_user' already exists. The SQL statement executed was: CREATE TABLE `tbl_user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` VARCHAR(64),
+	`email` VARCHAR(64),
+	`password` VARCHAR(128),
+	`username` VARCHAR(32),
+	`role` VARCHAR(16) DEFAULT 'user',
+	`lastLogin` int
+).
+2014/04/07 22:58:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_user' already exists. The SQL statement executed was: CREATE TABLE `tbl_user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` VARCHAR(64),
+	`email` VARCHAR(64),
+	`password` VARCHAR(128),
+	`username` VARCHAR(32),
+	`role` VARCHAR(16) DEFAULT 'user',
+	`lastLogin` int
+)' in C:\wamp\www\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(1324): CDbCommand->execute()
+#1 C:\wamp\www\yii\framework\db\CDbMigration.php(233): CDbCommand->createTable('{{user}}', Array, NULL)
+#2 C:\wamp\www\szakd_backend\protected\migrations\m140407_224229_add_users_table.php(15): CDbMigration->createTable('{{user}}', Array)
+#3 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(385): m140407_224229_add_users_table->up()
+#4 C:\wamp\www\yii\framework\cli\commands\MigrateCommand.php(109): MigrateCommand->migrateUp('m140407_224229_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 C:\wamp\www\yii\framework\console\CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 C:\wamp\www\yii\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#10 C:\wamp\www\yii\framework\yiic.php(33): CApplication->run()
+#11 C:\wamp\www\szakd_backend\protected\yiic.php(7): require_once('C:\wamp\www\yii...')
+#12 C:\wamp\www\szakd_backend\protected\yiic(4): require_once('C:\wamp\www\sza...')
+#13 {main}
+---

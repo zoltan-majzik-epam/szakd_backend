@@ -15,7 +15,7 @@ class StationApiControllerTest extends PHPUnit_Framework_TestCase {
 	 * This method is called before a test is executed.
 	 */
 	protected function setUp() {
-		$this->object = new StationApiController();
+		$this->object = new StationApiController("id");
 	}
 
 	/**
@@ -53,6 +53,7 @@ class StationApiControllerTest extends PHPUnit_Framework_TestCase {
 	 * @todo   Implement testActionTellPosition().
 	 */
 	public function testActionTellPosition() {
+		$token = "asdf";
 		$result = $this->object->actionTellPosition(32.23543, 12.423445, 999, $token);
 	}
 
