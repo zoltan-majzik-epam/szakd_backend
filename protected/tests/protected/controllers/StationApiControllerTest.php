@@ -54,7 +54,8 @@ class StationApiControllerTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function testActionTellPosition() {
 		$token = "asdf";
-		$result = $this->object->actionTellPosition(32.23543, 12.423445, 999, $token);
+		$result = $this->object->tellPosition(32.23543, 12.423445, 999, $token);
+		$this->assertTrue($result);
 	}
 
 }

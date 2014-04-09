@@ -35,9 +35,22 @@ class StationApiController extends Controller {
 	 * @param type $token
 	 */
 	public function actionTellPosition($stationid, $lat, $lng, $token) {
-		
+		$answer = "ERROR";
+		$this->tellPosition($stationid, $lat, $lng, $token, $answer);
+		$this->renderPartial("plain", array("answer" => $answer));
+	}
+
+	/**
+	 * The code that saves the new GPS position for a station
+	 * 
+	 * @param type $lat
+	 * @param type $lng
+	 * @param type $stationid
+	 * @param type $token
+	 */
+	public function tellPosition($stationid, $lat, $lng, $token, &$answer = null) {
 		if (!$this->autStation($stationid, $token)) {
-			$this->renderPartial("plain", array("answer" => "ERROR - Authentication failed."));
+			$answer = "ERROR - Authentication failed.";
 		}
 		
 		$answer = "ERROR";
@@ -53,14 +66,10 @@ class StationApiController extends Controller {
 			$answer = " - Save failed.";
 		}
 		
-		$this->renderPartial("plain", array("answer" => $answer));
-		
 		if ($answer === "OK")
 			return true;
 		else return false;
-		
 	}
-
 	/**
 	 * Checks that the id and token are valid
 	 * 
