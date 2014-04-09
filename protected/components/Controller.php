@@ -26,4 +26,9 @@ class Controller extends CController
 		parent::__construct($this->id, $this->module);
 	}*/
 	
+	public function init() {
+		Packages::register();
+		parent::init();
+	}
+	
 }
