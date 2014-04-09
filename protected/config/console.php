@@ -5,6 +5,10 @@
 $config = array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'MeasureStation',
+	'import' => array(
+		'application.models.*',
+		'application.components.*'
+	),
 
 	// preloading 'log' component
 	'preload'=>array('log'),
