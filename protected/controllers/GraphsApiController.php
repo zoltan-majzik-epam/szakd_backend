@@ -143,7 +143,7 @@ class GraphsApiController extends Controller {
 		$userSettings = array(
 			'sid' => !isset($_GET['sid']) ? intval(Yii::app()->user->getState('selected-station')) : intval($_GET['sid']),
 			'station' => !isset($_GET['sid']) ? intval(Yii::app()->user->getState('selected-station')) : intval($_GET['sid']),
-			'interval' => !isset($_GET['interval']) ? Yii::app()->user->getState('selected-interval') : $_GET['interval'],
+			'interval' => Yii::app()->user->getState('selected-interval'),
 			'time' => Yii::app()->user->getState('selected-time', false) ? intval(Yii::app()->user->getState('selected-time')) : time(),
 		);
 
@@ -325,6 +325,7 @@ class GraphsApiController extends Controller {
 		$interval = $data['interval'];
 		$time = $data['time']; // Ez mindíg a kiválasztott nap 00:00:00 időpontja
 
+		
 		if ($interval == 'daily') {
 			$data['from'] = $time;
 			$data['to'] = strtotime('+1 day -1 minute', $time);
@@ -351,13 +352,6 @@ class GraphsApiController extends Controller {
 			$data['to'] = PHP_INT_MAX;
 		}
 
-		$diff = $data['to'] - $data['from'];
-		if ($diff > 5184000) {
-			$this->seriesSettings["rain"]["unit"] = Yii::t('app', 'mm/day');
-		} elseif ($diff > 172800) {
-			$this->seriesSettings["rain"]["unit"] = Yii::t('app', 'mm/hour');
-		}
-
 		Yii::app()->user->setState('selected-time-to', $data["to"]);
 		return $data;
 	}
@@ -370,7 +364,7 @@ class GraphsApiController extends Controller {
 	 */
 	private function setStationName($data) {
 		$sid = $data['station'];
-		$record = Yii::app()->db->createCommand('SELECT `name` FROM {{stations}} WHERE id=:id LIMIT 1')->queryRow(true, array(':id' => $sid));
+		$record = Yii::app()->db->createCommand('SELECT `name` FROM {{station}} WHERE id=:id LIMIT 1')->queryRow(true, array(':id' => $sid));
 		$data['stationname'] = $record['name'];
 		return $data;
 	}

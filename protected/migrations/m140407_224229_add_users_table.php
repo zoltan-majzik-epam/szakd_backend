@@ -6,10 +6,10 @@ class m140407_224229_add_users_table extends CDbMigration
 	{
 		$this->createTable("{{user}}", array(
 			"id"	=> "pk",
-			"name"	=> "VARCHAR(64)",
-			"email"	=> "VARCHAR(64)",
-			"password"	=> "VARCHAR(128)",
-			"username"	=> "VARCHAR(32)",
+			"name"	=> "VARCHAR(64) NOT NULL",
+			"email"	=> "VARCHAR(64) NOT NULL",
+			"password"	=> "VARCHAR(128) NOT NULL",
+			"username"	=> "VARCHAR(32) NOT NULL",
 			"role"	=> "VARCHAR(16) DEFAULT 'user'",
 			"lastLogin"	=> "int"	
 		));

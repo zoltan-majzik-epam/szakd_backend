@@ -1,12 +1,11 @@
 <?php
 
 $this->breadcrumbs = array(
-	Station::label(2),
-	Yii::t('app', 'Index'),
+	Station::label(2) => array('index'),
+	Yii::t('app', 'List'),
 );
 
 $this->menu = array(
-	array('label'=>Yii::t('app', 'Create') . ' ' . Station::label(), 'url' => array('create')),
 	array('label'=>Yii::t('app', 'Manage') . ' ' . Station::label(2), 'url' => array('admin')),
 );
 ?>

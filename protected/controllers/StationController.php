@@ -55,9 +55,14 @@ class StationController extends GxController {
 	}
 
 	public function actionIndex() {
-		$dataProvider = new CActiveDataProvider('Station');
-		$this->render('index', array(
-			'dataProvider' => $dataProvider,
+		$model = new Station('search');
+		$model->unsetAttributes();
+
+		if (isset($_GET['Station']))
+			$model->setAttributes($_GET['Station']);
+
+		$this->render('admin', array(
+			'model' => $model,
 		));
 	}
 

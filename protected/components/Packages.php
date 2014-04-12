@@ -23,7 +23,7 @@ class Packages extends CComponent {
 			'globals' => array(
 				'baseUrl' => Yii::app()->getBaseUrl(false),
 				'js' => array(
-					'js/webapp/globals/globals.js',
+					'js/webapp/functions.js',
 				),
 				'depends' => array('jquery.ui'),
 			),
@@ -44,9 +44,10 @@ class Packages extends CComponent {
 			'graphs' => array(
 				'baseUrl' => Yii::app()->getBaseUrl(false) . '/js/webapp/graphs',
 				'js' => array(
-					'functions.js'
+					'functions.js',
+					'index.js'
 				),
-				'depends' => array('globals'),
+				'depends' => array('highcharts'),
 			)
 		);
 

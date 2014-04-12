@@ -1,8 +1,8 @@
 <?php
 
 $this->breadcrumbs = array(
-	Position::label(2),
-	Yii::t('app', 'Index'),
+	Position::label(2) => array('index'),
+	Yii::t('app', 'List')
 );
 
 $this->menu = array(

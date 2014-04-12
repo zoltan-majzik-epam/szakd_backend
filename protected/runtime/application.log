@@ -3362,3 +3362,1124 @@ Stack trace:
 #9 C:\wamp\www\szakd_backend\protected\yiic.php(7): require_once()
 #10 C:\wamp\www\szakd_backend\protected\yiic(4): require_once()
 
+2014/04/11 15:13:12 [error] [exception.CException] exception 'CException' with message 'Property "GraphsController.trackingParams" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php(28): CComponent->__set('trackingParams', Array)
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(281): GraphsController->init()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphs/index')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=station/index
+---
+2014/04/11 17:12:52 [warning] [application] Failed to set unsafe attribute "username" of "LoginForm".
+in C:\wamp\www\szakd_backend\protected\controllers\SiteController.php (92)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 17:12:52 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CComponent->__get('username')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 C:\wamp\www\szakd_backend\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sza...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sza...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sza...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 C:\wamp\www\szakd_backend\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/szakd_backend/index.php?r=site/login
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=site/login
+---
+2014/04/11 17:12:56 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CComponent->__get('username')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'username')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'username', Array)
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'username', Array)
+#4 C:\wamp\www\szakd_backend\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'username')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sza...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sza...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sza...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 C:\wamp\www\szakd_backend\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/szakd_backend/index.php?r=site/login
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=user/index
+---
+2014/04/11 17:32:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/szakd_backend/index.php?r=user/index
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=user/admin
+---
+2014/04/11 17:32:17 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/index')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/szakd_backend/index.php?r=user/index
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=position/index
+---
+2014/04/11 17:36:56 [error] [exception.CException] exception 'CException' with message 'Property "User.password2" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('password2')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('password2')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'password2')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(User), 'password2', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(User), 'password2', Array)
+#5 C:\wamp\www\szakd_backend\protected\views\user\_form.php(47): CActiveForm->textField(Object(User), 'password2', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sza...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sza...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sza...', Array, true)
+#9 C:\wamp\www\szakd_backend\protected\views\user\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sza...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sza...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\sza...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\wamp\www\szakd_backend\protected\controllers\UserController.php(79): CController->render('create', Array)
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#16 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#26 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/szakd_backend/index.php?r=user/create
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=user/index
+---
+2014/04/11 17:39:33 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\yii\framework\base\CModel.php:284)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#1 C:\wamp\www\yii\framework\zii\widgets\grid\CDataColumn.php(103): activeTextField()
+#2 C:\wamp\www\yii\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#3 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(532): CDataColumn->renderFilterCell()
+#4 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#5 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#7 unknown(0): CGridView->renderSection()
+#8 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(173): CGridView->run()
+#11 C:\wamp\www\szakd_backend\protected\views\user\admin.php(49): UserController->widget()
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#13 C:\wamp\www\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#14 C:\wamp\www\yii\framework\web\CController.php(869): UserController->renderFile()
+#15 C:\wamp\www\yii\framework\web\CController.php(782): UserController->renderPartial()
+#16 C:\wamp\www\szakd_backend\protected\controllers\UserController.php(147): UserController->render()
+#17 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#18 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#20 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#23 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\wamp\www\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(282): UserController->run()
+#27 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=user/admin
+in C:\wamp\www\szakd_backend\protected\views\user\admin.php (49)
+in C:\wamp\www\szakd_backend\protected\controllers\UserController.php (147)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 17:39:53 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\yii\framework\base\CModel.php:284)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#1 C:\wamp\www\yii\framework\zii\widgets\grid\CDataColumn.php(103): activeTextField()
+#2 C:\wamp\www\yii\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#3 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(532): CDataColumn->renderFilterCell()
+#4 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#5 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#7 unknown(0): CGridView->renderSection()
+#8 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(173): CGridView->run()
+#11 C:\wamp\www\szakd_backend\protected\views\user\admin.php(49): UserController->widget()
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#13 C:\wamp\www\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#14 C:\wamp\www\yii\framework\web\CController.php(869): UserController->renderFile()
+#15 C:\wamp\www\yii\framework\web\CController.php(782): UserController->renderPartial()
+#16 C:\wamp\www\szakd_backend\protected\controllers\UserController.php(147): UserController->render()
+#17 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): UserController->actionAdmin()
+#18 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#20 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#23 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\wamp\www\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(282): UserController->run()
+#27 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=user/admin
+in C:\wamp\www\szakd_backend\protected\views\user\admin.php (49)
+in C:\wamp\www\szakd_backend\protected\controllers\UserController.php (147)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 17:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\szakd_backend\protected\controllers\UserController.php:161
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\UserController.php(55): UserController->loadModel('2')
+#1 [internal function]: UserController->actionView('2')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/szakd_backend/index.php?r=user/view&id=2
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=user/create
+---
+2014/04/11 17:39:56 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\yii\framework\base\CModel.php:284)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#1 C:\wamp\www\yii\framework\zii\widgets\grid\CDataColumn.php(103): activeTextField()
+#2 C:\wamp\www\yii\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#3 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(532): CDataColumn->renderFilterCell()
+#4 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#5 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#7 unknown(0): CGridView->renderSection()
+#8 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(173): CGridView->run()
+#11 C:\wamp\www\szakd_backend\protected\views\user\admin.php(49): UserController->widget()
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#13 C:\wamp\www\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#14 C:\wamp\www\yii\framework\web\CController.php(869): UserController->renderFile()
+#15 C:\wamp\www\yii\framework\web\CController.php(782): UserController->renderPartial()
+#16 C:\wamp\www\szakd_backend\protected\controllers\UserController.php(132): UserController->render()
+#17 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#18 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#20 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#23 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\wamp\www\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(282): UserController->run()
+#27 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=user/index
+in C:\wamp\www\szakd_backend\protected\views\user\admin.php (49)
+in C:\wamp\www\szakd_backend\protected\controllers\UserController.php (132)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 17:39:56 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\yii\framework\base\CModel.php:284)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#1 C:\wamp\www\yii\framework\zii\widgets\grid\CDataColumn.php(103): activeTextField()
+#2 C:\wamp\www\yii\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#3 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(532): CDataColumn->renderFilterCell()
+#4 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#5 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#7 unknown(0): CGridView->renderSection()
+#8 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#9 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(173): CGridView->run()
+#11 C:\wamp\www\szakd_backend\protected\views\user\admin.php(49): UserController->widget()
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(126): require()
+#13 C:\wamp\www\yii\framework\web\CBaseController.php(95): UserController->renderInternal()
+#14 C:\wamp\www\yii\framework\web\CController.php(869): UserController->renderFile()
+#15 C:\wamp\www\yii\framework\web\CController.php(782): UserController->renderPartial()
+#16 C:\wamp\www\szakd_backend\protected\controllers\UserController.php(132): UserController->render()
+#17 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#18 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): UserController->runAction()
+#20 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#22 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): UserController->filterAccessControl()
+#23 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#24 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#25 C:\wamp\www\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(282): UserController->run()
+#27 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#28 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=user/index
+in C:\wamp\www\szakd_backend\protected\views\user\admin.php (49)
+in C:\wamp\www\szakd_backend\protected\controllers\UserController.php (132)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 17:39:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\szakd_backend\protected\controllers\UserController.php:161
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\UserController.php(55): UserController->loadModel('2')
+#1 [internal function]: UserController->actionView('2')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/szakd_backend/index.php?r=user/view&id=2
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=user/create
+---
+2014/04/11 17:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\szakd_backend\protected\controllers\UserController.php:161
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\UserController.php(55): UserController->loadModel('2')
+#1 [internal function]: UserController->actionView('2')
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/szakd_backend/index.php?r=user/view&id=2
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=user/create
+---
+2014/04/11 18:09:01 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "tbl_user".' in C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1747): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Array, Object(CDbCriteria))
+#1 C:\wamp\www\szakd_backend\protected\models\LoginForm.php(71): CActiveRecord->updateByPk('1', Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\SiteController.php(94): LoginForm->login()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/szakd_backend/index.php?r=site/login
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=site/login
+---
+2014/04/11 18:10:08 [error] [php] Missing argument 2 for CActiveRecord::updateByPk(), called in C:\wamp\www\szakd_backend\protected\models\LoginForm.php on line 71 and defined (C:\wamp\www\yii\framework\db\ar\CActiveRecord.php:1741)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#1 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\CController.php(286): SiteController->runAction()
+#3 C:\wamp\www\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=site/login
+in C:\wamp\www\szakd_backend\protected\models\LoginForm.php (71)
+in C:\wamp\www\szakd_backend\protected\controllers\SiteController.php (94)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 18:10:21 [error] [exception.CDbException] exception 'CDbException' with message 'No columns are being updated for table "tbl_user".' in C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:392
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1747): CDbCommandBuilder->createUpdateCommand(Object(CMysqlTableSchema), Array, Object(CDbCriteria))
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1124): CActiveRecord->updateByPk('1', Array)
+#2 C:\wamp\www\szakd_backend\protected\models\LoginForm.php(71): CActiveRecord->update(Array)
+#3 C:\wamp\www\szakd_backend\protected\controllers\SiteController.php(94): LoginForm->login()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/szakd_backend/index.php?r=site/login
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=site/login
+---
+2014/04/11 18:15:31 [error] [php] Undefined variable: model (C:\wamp\www\szakd_backend\protected\views\station\index.php:4)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(869): StationController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(782): StationController->renderPartial()
+#2 C:\wamp\www\szakd_backend\protected\controllers\StationController.php(61): StationController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): StationController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(286): StationController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(265): StationController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): StationController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=station/index
+in C:\wamp\www\szakd_backend\protected\views\station\index.php (4)
+in C:\wamp\www\szakd_backend\protected\controllers\StationController.php (61)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 19:02:00 [error] [php] include(Measurements.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php(69): spl_autoload_call()
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php(126): GraphsController->getFromTime()
+#2 C:\wamp\www\yii\framework\web\CController.php(306): GraphsController->beforeAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): GraphsController->runAction()
+#4 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): GraphsController->filterAccessControl()
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(265): GraphsController->runActionWithFilters()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): GraphsController->run()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php (69)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php (126)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 19:16:37 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "checkValidRegion".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\components\WebUser.php(75): CComponent->__call('checkValidRegio...', Array)
+#1 C:\wamp\www\szakd_backend\protected\components\WebUser.php(75): WebUser->checkValidRegion('999', 'graphs/index')
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php(102): WebUser->setState('selected-statio...', '999')
+#3 C:\wamp\www\yii\framework\web\CController.php(306): GraphsController->beforeAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphs/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index
+---
+2014/04/11 19:17:36 [error] [php] include(Measurements.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php(69): spl_autoload_call()
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php(129): GraphsController->getFromTime()
+#2 C:\wamp\www\yii\framework\web\CController.php(306): GraphsController->beforeAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): GraphsController->runAction()
+#4 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): GraphsController->filterAccessControl()
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(265): GraphsController->runActionWithFilters()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(282): GraphsController->run()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php (69)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php (129)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 19:22:13 [error] [php] include(Stations.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php(158): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\CController.php(306): GraphsController->beforeAction()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): GraphsController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): GraphsController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(265): GraphsController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): GraphsController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php (158)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 19:50:40 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "user".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\szakd_backend\themes\blackboot\views\layouts\main.php(166): CComponent->__call('user', Array)
+#1 C:\wamp\www\szakd_backend\themes\blackboot\views\layouts\main.php(166): CWebApplication->user()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sza...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sza...', Array, true)
+#4 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\wamp\www\sza...', Array, true)
+#5 C:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div class="row...')
+#6 C:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div class="row...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 C:\wamp\www\szakd_backend\themes\blackboot\views\layouts\column1.php(9): CBaseController->endContent()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\sza...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\sza...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(784): CBaseController->renderFile('C:\wamp\www\sza...', Array, true)
+#13 C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php(59): CController->render('index')
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(49): GraphsController->actionIndex()
+#15 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphs/index')
+#25 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=station/index
+---
+2014/04/11 20:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index?station=1000".' in C:\wamp\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(270): CController->missingAction('index?station=1...')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('index?station=1...')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphs/index?st...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index?station=1000
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index
+---
+2014/04/11 21:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:23:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:25:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:25:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:26:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:26:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:28:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:29:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:30:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:33:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:35:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:35:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:36:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:36:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:36:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:36:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:37:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:37:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:38:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getseries".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/graphs/getsummary".' in C:\wamp\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('api/graphs/gets...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=api%2Fgraphs%2Fgetsummary
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:39:42 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1.
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (373)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (154)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 21:39:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(373): CDbCommand->queryRow(true, Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(154): GraphsApiController->setStationName(Array)
+#3 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('/graphsApi/gets...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=%2FgraphsApi%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:40:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1.
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (373)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (154)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 21:40:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(373): CDbCommand->queryRow(true, Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(154): GraphsApiController->setStationName(Array)
+#3 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('/graphsApi/gets...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=%2FgraphsApi%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:40:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1.
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (373)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (154)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 21:40:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(373): CDbCommand->queryRow(true, Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(154): GraphsApiController->setStationName(Array)
+#3 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=graphsApi%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:41:03 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1.
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (373)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (154)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 21:41:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(373): CDbCommand->queryRow(true, Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(154): GraphsApiController->setStationName(Array)
+#3 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=graphsApi%2Fgetseries&graph=weather
+---
+2014/04/11 21:41:53 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1.
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (373)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (154)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 21:41:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(373): CDbCommand->queryRow(true, Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(154): GraphsApiController->setStationName(Array)
+#3 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&r=graphsApi%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:42:39 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1.
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (373)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (154)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 21:42:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(373): CDbCommand->queryRow(true, Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(154): GraphsApiController->setStationName(Array)
+#3 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&url=%2Findex.php&r=graphsApi%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:43:12 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1.
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (373)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (154)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 21:43:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(373): CDbCommand->queryRow(true, Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(154): GraphsApiController->setStationName(Array)
+#3 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&url=%2Findex.php&r=graphsApi%2Fgetseries&graph=weather
+---
+2014/04/11 21:43:39 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1.
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (373)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php (154)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 21:43:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'measurestations.tbl_stations' doesn't exist. The SQL statement executed was: SELECT `name` FROM tbl_stations WHERE id=:id LIMIT 1' in C:\wamp\www\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(373): CDbCommand->queryRow(true, Array)
+#2 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(154): GraphsApiController->setStationName(Array)
+#3 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#4 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&url=%2Findex.php&r=graphsApi%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:44:07 [error] [exception.CException] exception 'CException' with message 'GraphsApiController cannot find the requested view "getseries".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(173): CController->renderPartial('getseries', Array)
+#1 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&url=%2Findex.php&r=graphsApi%2Fgetseries&graph=weather
+---
+2014/04/11 21:44:39 [error] [exception.CException] exception 'CException' with message 'GraphsApiController cannot find the requested view "getseries".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(173): CController->renderPartial('getseries', Array)
+#1 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&url=%2Findex.php&r=graphsApi%2Fgetseries&graph=weather
+HTTP_REFERER=http://localhost/szakd_backend/index.php?r=graphs/index&interval=last
+---
+2014/04/11 21:44:49 [error] [exception.CException] exception 'CException' with message 'GraphsApiController cannot find the requested view "getseries".' in C:\wamp\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\szakd_backend\protected\controllers\GraphsApiController.php(173): CController->renderPartial('getseries', Array)
+#1 [internal function]: GraphsApiController->actionGetseries('weather', NULL, NULL)
+#2 C:\wamp\www\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(GraphsApiController), Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GraphsApiController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(282): CController->run('getseries')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('graphsApi/getse...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\szakd_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=last&url=%2Findex.php&r=graphsApi%2Fgetseries&graph=weather
+---
+2014/04/11 22:05:01 [error] [php] date_default_timezone_set(): Timezone ID 'UTC+2' is invalid (C:\wamp\www\szakd_backend\protected\components\Controller.php:34)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(281): GraphsController->init()
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=daily
+in C:\wamp\www\szakd_backend\protected\components\Controller.php (34)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php (24)
+in C:\wamp\www\szakd_backend\index.php (13)
+2014/04/11 22:05:08 [error] [php] date_default_timezone_set(): Timezone ID '+2' is invalid (C:\wamp\www\szakd_backend\protected\components\Controller.php:34)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(281): GraphsController->init()
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#2 C:\wamp\www\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#3 C:\wamp\www\szakd_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/szakd_backend/index.php?r=graphs/index&interval=daily
+in C:\wamp\www\szakd_backend\protected\components\Controller.php (34)
+in C:\wamp\www\szakd_backend\protected\controllers\GraphsController.php (24)
+in C:\wamp\www\szakd_backend\index.php (13)
