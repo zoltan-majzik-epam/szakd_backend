@@ -1,11 +1,18 @@
 <?php
 
 class StationApiController extends Controller {
-	
+
 	public function actionIndex() {
 		$this->renderPartial("plain", array("answer" => "Plain text answer from StationApi."));
 	}
 
+	/**
+	 * Uploads one file to the server and saves it.
+	 * 
+	 * @param type $filename
+	 * @param type $stationid
+	 * @param type $token
+	 */
 	public function actionUploadFile($filename, $stationid, $token) {
 
 		$answer = "ERROR";
@@ -18,14 +25,15 @@ class StationApiController extends Controller {
 				//save the file
 				$uploader = new DataUploader();
 				$ret = $uploader->saveToFile($data, $stationid, $filename);
-				if ($ret === true) { $answer = "OK"; }
+				if ($ret === true) {
+					$answer = "OK";
+				}
 			}
 		}
-		
+
 		$this->renderPartial("plain", array("answer" => $answer));
 	}
-	
-	
+
 	/**
 	 * Api for the stations to upload there GPS position
 	 * 
@@ -52,7 +60,7 @@ class StationApiController extends Controller {
 		if (!$this->autStation($stationid, $token)) {
 			$answer = "ERROR - Authentication failed.";
 		}
-		
+
 		$answer = "ERROR";
 		$pos = new Position("insert");
 		$pos->lat = $lat;
@@ -61,15 +69,16 @@ class StationApiController extends Controller {
 		$pos->station_id = $stationid;
 		if ($pos->validate() && $pos->save()) {
 			$answer = "OK";
-		}
-		else {
+		} else {
 			$answer = " - Save failed.";
 		}
-		
+
 		if ($answer === "OK")
 			return true;
-		else return false;
+		else
+			return false;
 	}
+
 	/**
 	 * Checks that the id and token are valid
 	 * 
@@ -85,18 +94,38 @@ class StationApiController extends Controller {
 		else
 			return false;
 	}
-	
+
+	/**
+	 * An interface for the new stations setup process, to get an id and token.
+	 */
 	public function actionRequestNewStation() {
+		$station = $this->requestNewStation();
+
+		if ($station)
+			$this->renderPartial("plain", array("answer" => $station->id . "," . $station->token));
+		else 
+			$this->renderPartial("plain", array("answer" => "ERROR"));
+			
+	}
+
+	/**
+	 * Creates a new station
+	 * 
+	 * @return boolean|\Station
+	 */
+	public function requestNewStation() {
 		$sql = "SELECT MAX(id) + 1 FROM {{station}}";
 		$id = Yii::app()->db->createCommand($sql)->queryScalar();
 		$token = md5($id . time());
-		
+
 		$station = new Station();
 		$station->id = $id;
 		$station->token = $token;
 		$station->name = "$id - Station";
-		$station->save();
-		$this->renderPartial("plain", array("answer" => $id . "," . $token));
+		if ($station->save())
+			return $station;
+		else
+			return false;
 	}
 
 }

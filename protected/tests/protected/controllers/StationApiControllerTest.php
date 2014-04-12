@@ -5,6 +5,9 @@
  */
 class StationApiControllerTest extends PHPUnit_Framework_TestCase {
 
+	protected $stationid = 1;
+	protected $token = "0aca0985c3b0a45c096565abd4994791";
+	
 	/**
 	 * @var StationApiController
 	 */
@@ -38,6 +41,7 @@ class StationApiControllerTest extends PHPUnit_Framework_TestCase {
 	}
 
 	/**
+	 * @group Integration
 	 * @covers StationApiController::actionUploadFile
 	 * @todo   Implement testActionUploadFile().
 	 */
@@ -47,15 +51,29 @@ class StationApiControllerTest extends PHPUnit_Framework_TestCase {
 			'This test has not been implemented yet.'
 		);
 	}
-
+	
 	/**
-	 * @covers StationApiController::actionTellPosition
-	 * @todo   Implement testActionTellPosition().
+	 * @group Unit
+	 * @covers StationApiController::requestNewStation
 	 */
-	public function testActionTellPosition() {
-		$token = "asdf";
-		$result = $this->object->tellPosition(32.23543, 12.423445, 999, $token);
-		$this->assertTrue($result);
+	public function testRequestNewStation() {
+		$station = $this->object->requestNewStation();
+		$this->assertInstanceOf('Station', $station);
+		if ($station)
+			$station->delete();
 	}
 
+	/**
+	 * @group Unit
+	 * @covers StationApiController::tellPosition
+	 */
+	public function testTellPosition() {
+		$answer;
+		$result = $this->object->tellPosition($this->stationid, 32.23543, 12.423445, $this->token, $answer);
+		$this->assertTrue($result);
+		if ($result) {
+			$posid = Yii::app()->db->getLastInsertID();
+			Position::model()->deleteByPk($posid);
+		}
+	}
 }

@@ -15,6 +15,7 @@ class DataUploader {
 		
 		if ($path === false) return false;
 		
+		$path .= DIRECTORY_SEPARATOR . $filename;
 		//echo $path; return false;
 		
 		return (file_put_contents($path, $data, FILE_APPEND) == strlen($data)) ? true : false;
@@ -39,7 +40,7 @@ class DataUploader {
 		//test type dir
 		if (!$this->createDirectory($path)) return false;
 		
-		return $path . DIRECTORY_SEPARATOR . $filename;
+		return $path;
 	}
 
 	
