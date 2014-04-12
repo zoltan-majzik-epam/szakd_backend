@@ -139,7 +139,19 @@ class GraphsApiController extends Controller {
 	/**
 	 * Returns the data for the selected graph in JSON format.
 	 */
-	public function actionGetseries($graph, $disease = null, $selectedTab = null) {
+	public function actionGetseries($graph) {
+		$data = $this->getSeries($graph);
+		$this->renderPartial('getseries', array('data' => $data));
+	}
+	
+	/**
+	 * Returns the data to the graph in arrays
+	 * 
+	 * @param string $graphs
+	 * @return array
+	 * @throws CException
+	 */
+	public function getSeries($graph) {
 		$userSettings = array(
 			'sid' => !isset($_GET['sid']) ? intval(Yii::app()->user->getState('selected-station')) : intval($_GET['sid']),
 			'station' => !isset($_GET['sid']) ? intval(Yii::app()->user->getState('selected-station')) : intval($_GET['sid']),
@@ -170,7 +182,7 @@ class GraphsApiController extends Controller {
 			}
 
 
-			$this->renderPartial('getseries', array('data' => $data));
+			return $data;
 		} else {
 			throw new CException('Invalid graph type');
 		}

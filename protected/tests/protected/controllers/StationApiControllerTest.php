@@ -29,16 +29,6 @@ class StationApiControllerTest extends PHPUnit_Framework_TestCase {
 		
 	}
 
-	/**
-	 * @covers StationApiController::actionIndex
-	 * @todo   Implement testActionIndex().
-	 */
-	public function testActionIndex() {
-		// Remove the following lines when you implement this test.
-		$this->markTestIncomplete(
-			'This test has not been implemented yet.'
-		);
-	}
 
 	/**
 	 * @group Integration
