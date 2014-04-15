@@ -212,7 +212,7 @@ class GraphsApiController extends Controller {
 		}
 		// If it is Callable, it a function returning...
 		elseif (is_callable($seriesSettings['query'])) {
-			$query = $seriesSettings['query']($seriesSettings, $userSettings, /* inout */ $sqlParams);
+			$query = $this->measurementQuery($seriesSettings, $userSettings, /* inout */ $sqlParams);
 			// ...an SQL command, run it.
 			if ($query instanceof CDbCommand) {
 				$rawData = $query->queryAll(true, $sqlParams);
