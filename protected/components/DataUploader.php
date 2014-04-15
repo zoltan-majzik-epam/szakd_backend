@@ -55,7 +55,7 @@ class DataUploader {
 		if (file_exists($path)) {
 			return true;
 		}
-		return mkdir($path, '0777', true);
+		return mkdir($path, 0755, true);
 	}
 	
 }
