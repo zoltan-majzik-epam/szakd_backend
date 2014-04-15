@@ -60,10 +60,13 @@
 .highcharts {
 	margin: 0 -20px -20px -20px;
 }
-
+#SelectDate {
+	margin: 5px 10px;
+	cursor: pointer;
+}
 #dateSelector {
 	display: none;
 	position: absolute;
 	z-index: 50000;
-	margin-top: 20px;
+	margin-top: 10px;
 }
