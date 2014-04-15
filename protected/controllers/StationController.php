@@ -2,7 +2,6 @@
 
 class StationController extends GxController {
 
-
 	public function actionView($id) {
 		$this->render('view', array(
 			'model' => $this->loadModel($id, 'Station'),
@@ -24,7 +23,7 @@ class StationController extends GxController {
 			}
 		}
 
-		$this->render('create', array( 'model' => $model));
+		$this->render('create', array('model' => $model));
 	}
 
 	public function actionUpdate($id) {
@@ -40,8 +39,8 @@ class StationController extends GxController {
 		}
 
 		$this->render('update', array(
-				'model' => $model,
-				));
+			'model' => $model,
+		));
 	}
 
 	public function actionDelete($id) {
@@ -77,11 +76,16 @@ class StationController extends GxController {
 			'model' => $model,
 		));
 	}
-	
+
 	public function accessRules() {
-		return array_merge_recursive(
-			parent::accessRules(), array(
-			)
+		return array(
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('admin','create', 'update', 'index', 'view'),
+				'users'=>array('@'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
 		);
 	}
 
