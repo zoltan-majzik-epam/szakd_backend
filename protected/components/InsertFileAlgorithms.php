@@ -87,7 +87,7 @@
 	 * @param float $humidity Relative humidity (%), or '?' if not available.
 	 * @return mixed An associative array with the data
 	 */
-	public static function algorithmV1($timestamp, $leafResistance, $temperature, $humidity) {
+	public static function algorithmV1($timestamp, $temperature, $humidity, $leafResistance) {
 		if (!intval($timestamp))
 			return false;
 		$temperatureValue = false;
