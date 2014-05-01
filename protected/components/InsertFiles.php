@@ -219,11 +219,13 @@ class InsertFiles {
 	 * @param array $data The measurement data from file/forecast
 	 */
 	public function dataToMeasurements($station, $firstTime, $lastTime, &$data) {
+		
 		$emptyArray = $this->allocEmptyArray($firstTime, $lastTime);
+		//var_dump($data);
 		$dataArray = $this->mergeData($data, $emptyArray);
-
+		
 		$this->repairData($data, $dataArray, $firstTime);
-
+		
 		$this->insertRepairedData($station, $dataArray);
 	}
 
@@ -449,9 +451,9 @@ SQL;
 		if ($fileName != null)
 			$fileTime = $this->getFileTimeFromFileName($fileName);
 		if ($fileTime > $station['last_upload'])
-			return $fileTime;
+			return $fileTime - ($fileTime % 60);
 		else
-			return $station['last_upload'];
+			return $station['last_upload'] - ($station['last_upload'] % 60);
 	}
 
 	/**
@@ -464,6 +466,7 @@ SQL;
 	 * @return integer Az adott mérési fájl "utolsó" ideje
 	 */
 	protected function getLastTime($fileData) {
+		//var_dump($fileData);
 		$keys = array_keys($fileData);
 		return end($keys);
 	}
@@ -482,6 +485,7 @@ SQL;
 	 * @return array Üres mérési tömb
 	 */
 	protected function allocEmptyArray($firstTime, $lastTime) {
+		//echo $firstTime . " - " . $lastTime . "\n";
 		$return = array();
 		for ($t = $firstTime; $t <= $lastTime; $t += 60) {
 			$return[$t]['temperature'] = false;
@@ -504,6 +508,7 @@ SQL;
 	 */
 	protected function mergeData($fileArray, $emptyArray) {
 		foreach ($emptyArray as $time => $data) {
+			//echo $time . "\n";
 			if (array_key_exists($time, $fileArray)) {
 				$emptyArray[$time] = $fileArray[$time];
 			}

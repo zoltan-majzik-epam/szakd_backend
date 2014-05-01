@@ -71,7 +71,8 @@
 			if ($requiredParams !== $suppliedParams) {
 				Yii::log("Invalid row, required param count is $requiredParams, $suppliedParams was given", CLogger::LEVEL_WARNING, 'insertfiles');
 			} else {
-				return $rMethod->invokeArgs(null, $rowData);
+				$ret = $rMethod->invokeArgs(null, $rowData);
+				return $ret;
 			}
 		} catch (ReflectionException $ex) {
 			Yii::log("Error for algorithm version $rowVersion: " . $ex->getMessage(), CLogger::LEVEL_WARNING, 'insertfiles');
