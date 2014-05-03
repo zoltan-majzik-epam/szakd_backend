@@ -413,7 +413,6 @@ SQL;
 			$aRow = str_getcsv(trim($sRow), ";");
 			$data = InsertFileAlgorithms::getDataForRow($ver, array_slice($aRow, 1));
 		} else {
-			echo "Invalid row version";
 			return false;
 		}
 
