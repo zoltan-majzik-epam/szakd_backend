@@ -24,8 +24,8 @@ class User extends BaseUser {
 
 	public function beforeSave() {
 		if ($this->isNewRecord) {
-			$this->password = UserIdentity::getPasswordHash($this->username, $this->password);
+			$this->password = CPasswordHelper::hashPassword($this->password);
 		}
-		parent::beforeSave();
+		return parent::beforeSave();
 	}
 }

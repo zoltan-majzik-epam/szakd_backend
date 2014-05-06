@@ -15,11 +15,12 @@
 		// See class documentation of CActiveForm for details on this.
 		'enableAjaxValidation' => false,
 	));
+	/* @var $form CActiveForm */
 	?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<?php echo $form->errorSummary($model);?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model, 'name'); ?>
@@ -41,12 +42,12 @@
 	<?php if ($model->scenario == 'insert') : ?>
 		<div class="row">
 			<?php echo $form->labelEx($model, 'password'); ?>
-			<?php echo $form->textField($model, 'password', array('size' => 60, 'maxlength' => 128)); ?>
+			<?php echo $form->passwordField($model, 'password', array('size' => 60, 'maxlength' => 128)); ?>
 			<?php echo $form->error($model, 'password'); ?>
 		</div>
 		<div class="row">
 			<?php echo $form->labelEx($model, 'repeat_password'); ?>
-			<?php echo $form->textField($model, 'repeat_password', array('size' => 60, 'maxlength' => 128)); ?>
+			<?php echo $form->passwordField($model, 'repeat_password', array('size' => 60, 'maxlength' => 128)); ?>
 			<?php echo $form->error($model, 'repeat_password'); ?>
 		</div>
 	<?php endif; ?>
