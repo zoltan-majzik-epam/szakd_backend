@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 $config = array(
 	'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-	'name' => 'MeasureStations',
+	'name' => 'Vegetation monitor backend',
 	'theme' => 'blackboot',
 	// preloading 'log' component
 	'preload' => array('log'),
