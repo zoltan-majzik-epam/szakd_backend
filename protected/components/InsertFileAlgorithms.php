@@ -15,43 +15,33 @@
 	public static function kOhmToScalar($kohm) {
 		/*
 		 * The value, from the leaf is wet.
-		 * 0, 10000, 1500, 700, 440, 300, 200, 160, 120, 90, 60, 50, 40, 30, 20, 10 kOhm
-		 * 0,     1,    2,   3,   4,   5,   6,   7,   8,  9, 10, 11, 12, 13, 14, 15
+		 * 400, 300, 230, 180, 140, 105, 85, 65, 50,  40, kOhm
+		 * 0,     1,   2,   3,   4,   5,   6,  7,  8,  9,  10
 		 * 
 		 * http://agromet-cost.bo.ibimet.cnr.it/fileadmin/cost718/repository/report_siversten.pdf
 		 */
 
-		if ($kohm > 10000)
+		if ($kohm > 400)
 			return 0;
-		if ($kohm > 1500)
-			return 1;
-		if ($kohm > 700)
-			return 2;
-		if ($kohm > 440)
-			return 3;
 		if ($kohm > 300)
+			return 1;
+		if ($kohm > 230)
+			return 2;
+		if ($kohm > 180)
+			return 3;
+		if ($kohm > 140)
 			return 4;
-		if ($kohm > 200)
+		if ($kohm > 105)
 			return 5;
-		if ($kohm > 160)
+		if ($kohm > 85)
 			return 6;
-		if ($kohm > 120)
+		if ($kohm > 65)
 			return 7;
-		if ($kohm > 90)
-			return 8;
-		if ($kohm > 60)
-			return 9;
 		if ($kohm > 50)
-			return 10;
+			return 8;
 		if ($kohm > 40)
-			return 11;
-		if ($kohm > 30)
-			return 12;
-		if ($kohm > 20)
-			return 13;
-		if ($kohm > 10)
-			return 14;
-		return 15;
+			return 9;
+		return 10;
 	}
 
 	/**
