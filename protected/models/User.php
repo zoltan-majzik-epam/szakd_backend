@@ -22,4 +22,10 @@ class User extends BaseUser {
 			), parent::rules());
 	}
 
+	public function beforeSave() {
+		if ($this->isNewRecord) {
+			$this->password = UserIdentity::getPasswordHash($this->username, $this->password);
+		}
+		parent::beforeSave();
+	}
 }

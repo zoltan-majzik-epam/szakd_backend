@@ -125,7 +125,7 @@ class GraphsApiController extends Controller {
 				'color' => '#24A800',
 				'dbColumn' => 'leaf_wetness',
 				'grouping' => 'MAX',
-				'max' => 20,
+				'max' => 15,
 				'min' => 0,
 				'multiplier' => 1,
 				'query' => $measurementQueryHelper,
